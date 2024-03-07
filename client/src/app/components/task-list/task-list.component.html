@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Task #</th>
+            <th>Description</th>
+            <th>Creation Date</th>
+            <th>Customer</th>
+            <th>Completed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of tasks">
+            <td>{{ task.id }}</td>
+            <td>{{ task.task_description }}</td>
+            <td>{{ task.task_creation_date }}</td>
+            <td>{{ task.customer_name }}</td>
+            <td>
+                <input type="checkbox" [checked]="task.task_completed" disabled />
+            </td>
+        </tr>
+    </tbody>
+</table>

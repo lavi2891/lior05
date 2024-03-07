@@ -1,0 +1,48 @@
+/* Style for the form container */
+.form-container {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form input elements */
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding-right: -30px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+button:hover {
+    background-color: #0056b3;
+}

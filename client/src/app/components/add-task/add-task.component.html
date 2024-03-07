@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()" class="form-container">
+    <label for="task_description">Task Description:</label>
+    <textarea
+        type="text"
+        id="task_description"
+        name="task_description"
+        [(ngModel)]="task_description"
+        required
+    ></textarea>
+
+    <label for="customer">Select Customer:</label>
+    <select id="customer" name="customer" [(ngModel)]="customer_id" required>
+        <option value="">-- Select a Customer --</option>
+        <option *ngFor="let customer of customers" [value]="customer.id">
+            {{ customer.name }}
+        </option>
+    </select>
+
+    <button type="submit">Add Task</button>
+</form>

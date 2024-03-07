@@ -1,0 +1,33 @@
+/* Apply styles to the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Style the navigation links */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px; /* Add spacing between navigation items */
+  }
+
+  li.active a{
+    color: #ffcc00; /* Change the background color for the active link */
+  }
+  
+  /* Style the navigation links */
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Change link color on hover */
+  a:hover {
+    color: #ffcc00;
+  }
